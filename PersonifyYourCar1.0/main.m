@@ -1,8 +1,8 @@
 //
 //  main.m
-//  PersonifyYourCar1.0
+//  PersonifyYourCar
 //
-//  Created by TAE on 20/10/2015.
+//  Created by TAE on 16/10/2015.
 //  Copyright (c) 2015 TAE. All rights reserved.
 //
 

@@ -10,11 +10,13 @@
 		03C4D7391BD64A5D00BEFC56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4D7381BD64A5D00BEFC56 /* main.m */; };
 		03C4D73C1BD64A5D00BEFC56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4D73B1BD64A5D00BEFC56 /* AppDelegate.m */; };
 		03C4D73F1BD64A5D00BEFC56 /* PersonifyYourCar1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03C4D73D1BD64A5D00BEFC56 /* PersonifyYourCar1_0.xcdatamodeld */; };
-		03C4D7421BD64A5D00BEFC56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4D7411BD64A5D00BEFC56 /* ViewController.m */; };
 		03C4D7451BD64A5D00BEFC56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C4D7431BD64A5D00BEFC56 /* Main.storyboard */; };
 		03C4D7471BD64A5D00BEFC56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C4D7461BD64A5D00BEFC56 /* Images.xcassets */; };
 		03C4D74A1BD64A5D00BEFC56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C4D7481BD64A5D00BEFC56 /* LaunchScreen.xib */; };
 		03C4D7561BD64A5E00BEFC56 /* PersonifyYourCar1_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4D7551BD64A5E00BEFC56 /* PersonifyYourCar1_0Tests.m */; };
+		03C4D7621BD64BF600BEFC56 /* AddCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4D7611BD64BF600BEFC56 /* AddCarViewController.m */; };
+		03C4D7661BD64E6C00BEFC56 /* CarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4D7651BD64E6C00BEFC56 /* CarViewController.m */; };
+		03C4D7691BD64ECB00BEFC56 /* AddEntitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4D7681BD64ECB00BEFC56 /* AddEntitiesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +36,18 @@
 		03C4D73A1BD64A5D00BEFC56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03C4D73B1BD64A5D00BEFC56 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		03C4D73E1BD64A5D00BEFC56 /* PersonifyYourCar1_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonifyYourCar1_0.xcdatamodel; sourceTree = "<group>"; };
-		03C4D7401BD64A5D00BEFC56 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		03C4D7411BD64A5D00BEFC56 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		03C4D7441BD64A5D00BEFC56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03C4D7461BD64A5D00BEFC56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03C4D7491BD64A5D00BEFC56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		03C4D74F1BD64A5E00BEFC56 /* PersonifyYourCar1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonifyYourCar1.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C4D7541BD64A5E00BEFC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03C4D7551BD64A5E00BEFC56 /* PersonifyYourCar1_0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonifyYourCar1_0Tests.m; sourceTree = "<group>"; };
+		03C4D7601BD64BDF00BEFC56 /* AddCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCarViewController.h; sourceTree = "<group>"; };
+		03C4D7611BD64BF600BEFC56 /* AddCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCarViewController.m; sourceTree = "<group>"; };
+		03C4D7641BD64E5400BEFC56 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		03C4D7651BD64E6C00BEFC56 /* CarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarViewController.m; sourceTree = "<group>"; };
+		03C4D7671BD64EBA00BEFC56 /* AddEntitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEntitiesViewController.h; sourceTree = "<group>"; };
+		03C4D7681BD64ECB00BEFC56 /* AddEntitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEntitiesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +89,10 @@
 		03C4D7351BD64A5D00BEFC56 /* PersonifyYourCar1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				03C4D7631BD64E3200BEFC56 /* Core Data */,
+				03C4D75F1BD64BA100BEFC56 /* Admin */,
 				03C4D73A1BD64A5D00BEFC56 /* AppDelegate.h */,
 				03C4D73B1BD64A5D00BEFC56 /* AppDelegate.m */,
-				03C4D7401BD64A5D00BEFC56 /* ViewController.h */,
-				03C4D7411BD64A5D00BEFC56 /* ViewController.m */,
 				03C4D7431BD64A5D00BEFC56 /* Main.storyboard */,
 				03C4D7461BD64A5D00BEFC56 /* Images.xcassets */,
 				03C4D7481BD64A5D00BEFC56 /* LaunchScreen.xib */,
@@ -120,6 +126,26 @@
 				03C4D7541BD64A5E00BEFC56 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03C4D75F1BD64BA100BEFC56 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				03C4D7681BD64ECB00BEFC56 /* AddEntitiesViewController.m */,
+				03C4D7671BD64EBA00BEFC56 /* AddEntitiesViewController.h */,
+				03C4D7611BD64BF600BEFC56 /* AddCarViewController.m */,
+				03C4D7601BD64BDF00BEFC56 /* AddCarViewController.h */,
+			);
+			name = Admin;
+			sourceTree = "<group>";
+		};
+		03C4D7631BD64E3200BEFC56 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				03C4D7651BD64E6C00BEFC56 /* CarViewController.m */,
+				03C4D7641BD64E5400BEFC56 /* CoreDataManager.h */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				03C4D73C1BD64A5D00BEFC56 /* AppDelegate.m in Sources */,
+				03C4D7691BD64ECB00BEFC56 /* AddEntitiesViewController.m in Sources */,
+				03C4D7661BD64E6C00BEFC56 /* CarViewController.m in Sources */,
 				03C4D73F1BD64A5D00BEFC56 /* PersonifyYourCar1_0.xcdatamodeld in Sources */,
-				03C4D7421BD64A5D00BEFC56 /* ViewController.m in Sources */,
+				03C4D7621BD64BF600BEFC56 /* AddCarViewController.m in Sources */,
 				03C4D7391BD64A5D00BEFC56 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
