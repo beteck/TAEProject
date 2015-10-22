@@ -38,14 +38,14 @@
     //This creates in managed object context a structure for our entity
     NSManagedObject* newPerson = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:moc];
 
-    //Now write the values to our entity
-    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:0] forKey:@"lastName"];
-    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:1] forKey:@"firstName"];
-    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:2] forKey:@"address"];
-    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:3] forKey:@"email"];
-    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:4] forKey:@"phone"];
-    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:5] forKey:@"carCount"];
-    
+//    //Now write the values to our entity
+//    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:0] forKey:@"lastName"];
+//    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:1] forKey:@"firstName"];
+//    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:2] forKey:@"address"];
+//    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:3] forKey:@"email"];
+//    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:4] forKey:@"phone"];
+//    [newPerson setValue:[arrayOfPersonAttributes objectAtIndex:5] forKey:@"carCount"];
+//    
     //Verify the addition was successfull
     NSError* error = nil;
     //Save new person to persisten storage
@@ -73,7 +73,7 @@
     //Now write the values to our entity
     [newPerson setValue:[arrayOfCarAttributes objectAtIndex:0] forKey:@"brandName"];
     [newPerson setValue:[arrayOfCarAttributes objectAtIndex:1] forKey:@"modelName"];
-    [newPerson setValue:[arrayOfCarAttributes objectAtIndex:2] forKey:@"linkCount"];
+    [newPerson setValue:[arrayOfCarAttributes objectAtIndex:2] forKey:@"imageUrl"];
    
     
     //Verify the addition was successfull

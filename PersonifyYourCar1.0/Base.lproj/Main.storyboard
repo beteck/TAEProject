@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gWd-b9-wba">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Add Entities View Controller-->
@@ -152,8 +153,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT5-Zj-fnB">
-                                <rect key="frame" x="165" y="329" width="106" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT5-Zj-fnB">
+                                <rect key="frame" x="165" y="329" width="106" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="c5C-rF-ufz"/>
+                                </constraints>
                                 <state key="normal" title="Register">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -161,14 +165,31 @@
                                     <action selector="registerCar:" destination="WFO-nd-ZBh" eventType="touchUpInside" id="PSa-e2-T9r"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Image Link" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaT-EN-aS1">
+                                <rect key="frame" x="16" y="232" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bAx-hb-nxl">
+                                <rect key="frame" x="137" y="223" width="223" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sr9-FV-uIB" firstAttribute="top" secondItem="NT5-Zj-fnB" secondAttribute="bottom" constant="372" id="38e-oe-5zi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NT5-Zj-fnB" secondAttribute="trailing" constant="127" id="M1P-fg-BQv"/>
+                            <constraint firstItem="NT5-Zj-fnB" firstAttribute="leading" secondItem="1jp-4j-24D" secondAttribute="leadingMargin" constant="149" id="uey-5C-Mlc"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="carBrandTextField" destination="uaA-hR-ca8" id="kG8-vE-H2c"/>
                         <outlet property="carModelTextField" destination="9ai-Wm-cri" id="bH1-dT-Zff"/>
                         <outlet property="carPriceTextField" destination="2Lr-xl-FMd" id="nav-5T-QA1"/>
+                        <outlet property="imageUrlTextField" destination="bAx-hb-nxl" id="lNm-ey-reD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFb-mb-cUK" userLabel="First Responder" sceneMemberID="firstResponder"/>

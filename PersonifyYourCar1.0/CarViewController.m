@@ -8,6 +8,7 @@
 
 #import "CarViewController.h"
 #import "WebService.h"
+#import "CarTableViewCell.h"
 
 
 @interface CarViewController()
@@ -24,6 +25,8 @@
 {
     NSArray* cars;
     NSArray* dictionaryRepOfCars;
+    NSString* carImageUrl;
+    UIImage* carImage;
 }
 
 -(void)viewDidLoad
@@ -32,14 +35,15 @@
     
     //initialize the cars to be displayed by downloading them from the web server.
     dictionaryRepOfCars = [WebService getAllEntitiesOfSpecifiedType:@"Car"];
-  
     
-//    NSString* testdata = [[dictionaryRepOfCars objectAtIndex:1]valueForKey:@"name"];
-//    NSArray* data = [testdata componentsSeparatedByString:@"-"];
+    carImageUrl = @"http://www.autotrader.co.uk/content/2016-nissan-leaf-30kwh-first-drive";
     
-//    NSLog(@"%@",testdata);
-//    NSLog(@"%@",[[dictionaryRepOfCars objectAtIndex:1]valueForKey:@"name"]);
-//    NSArray* test = [WebService convertDictionaryToString:[dictionaryRepOfCars objectAtIndex:1]];
+    
+    for(int i=0; i<[dictionaryRepOfCars count];i++)
+    {
+        NSObject* obj = [dictionaryRepOfCars objectAtIndex:i];
+        NSLog(@"%@",obj);
+    }
     
     
 }
@@ -58,16 +62,25 @@
     
     
     //the cell identifier
-    static NSString* carOnDisplay = @"CarOnDisplay";
+    static NSString* carCell = @"CarDisplayCell";
     
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:carOnDisplay];
+    CarTableViewCell* cell = (CarTableViewCell*)[tableView dequeueReusableCellWithIdentifier:carCell];
     
     if(cell == nil)
     {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:carOnDisplay];
+        //cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:carCell];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CarDisplayCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+        
+
     }
     
-    cell.textLabel.text = self.carName;
+    carImage = [WebService imageFromUrl:carImageUrl fromcache:TRUE];
+    
+    cell.carNameLabel.text = self.carName;
+    cell.carImage.image = carImage;
+    cell.carModelLabel.text = self.carModel;
+    cell.carPriceLabel.text = self.carPrice;
     
     return cell;
 }
@@ -83,6 +96,10 @@
     self.carName = [attributesComponents objectAtIndex:4];
     self.carModel = [attributesComponents objectAtIndex:5];
     self.carPrice = [attributesComponents objectAtIndex:6];
+    carImageUrl = [attributesComponents objectAtIndex:7];
+    carImageUrl = [carImageUrl stringByReplacingOccurrencesOfString:@"@" withString:@"-"];
+    carImageUrl = [carImageUrl stringByReplacingOccurrencesOfString:@" " withString:@""];
+    carImageUrl = [carImageUrl stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     
 }
 

@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface CarTableViewCell : UITableViewCell
+@property(nonatomic,weak)IBOutlet UILabel* carNameLabel;
+@property(nonatomic,weak)IBOutlet UILabel* carModelLabel;
+@property(nonatomic,weak)IBOutlet UILabel* carPriceLabel;
+@property(nonatomic,weak)IBOutlet UIImageView* carImage;
 
 @end

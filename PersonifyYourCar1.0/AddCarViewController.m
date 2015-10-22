@@ -23,7 +23,7 @@
 {
     NSArray* carAttributes = [[NSArray alloc]init];
     
-    NSString* concatAttributes= [NSString stringWithFormat:@"%@|%@|%@",self.carBrandTextField.text,self.carModelTextField.text,self.carPriceTextField.text];
+    NSString* concatAttributes= [NSString stringWithFormat:@"%@|%@|%@|%@",self.carBrandTextField.text,self.carModelTextField.text,self.carPriceTextField.text,self.imageUrlTextField.text];
     carAttributes = [concatAttributes componentsSeparatedByString:@"|"];
     
     return carAttributes;

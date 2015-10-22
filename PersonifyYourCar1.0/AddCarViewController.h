@@ -11,6 +11,7 @@
 @interface AddCarViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextField *carBrandTextField;
 @property (strong, nonatomic) IBOutlet UITextField *carModelTextField;
+@property (strong, nonatomic) IBOutlet UITextField *imageUrlTextField;
 @property (strong, nonatomic) IBOutlet UITextField *carPriceTextField;
 - (IBAction)registerCar:(id)sender;
 
