@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03B402C01BD7E519003158C5 /* CarDisplayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B402BF1BD7E519003158C5 /* CarDisplayCell.xib */; };
 		03B402C41BD7ECE4003158C5 /* CarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B402C31BD7ECE4003158C5 /* CarTableViewCell.m */; };
+		03B402C71BD94E36003158C5 /* SettingsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03B402C61BD94E36003158C5 /* SettingsBundle.bundle */; };
 		03C4D7391BD64A5D00BEFC56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4D7381BD64A5D00BEFC56 /* main.m */; };
 		03C4D73C1BD64A5D00BEFC56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4D73B1BD64A5D00BEFC56 /* AppDelegate.m */; };
 		03C4D73F1BD64A5D00BEFC56 /* PersonifyYourCar1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03C4D73D1BD64A5D00BEFC56 /* PersonifyYourCar1_0.xcdatamodeld */; };
@@ -37,6 +38,7 @@
 		03B402BF1BD7E519003158C5 /* CarDisplayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarDisplayCell.xib; sourceTree = "<group>"; };
 		03B402C21BD7ECE4003158C5 /* CarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarTableViewCell.h; sourceTree = "<group>"; };
 		03B402C31BD7ECE4003158C5 /* CarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarTableViewCell.m; sourceTree = "<group>"; };
+		03B402C61BD94E36003158C5 /* SettingsBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SettingsBundle.bundle; sourceTree = "<group>"; };
 		03C4D7331BD64A5D00BEFC56 /* PersonifyYourCar1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonifyYourCar1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C4D7371BD64A5D00BEFC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03C4D7381BD64A5D00BEFC56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 			name = "Customized Cells";
 			sourceTree = "<group>";
 		};
+		03B402C51BD94DFB003158C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03B402C61BD94E36003158C5 /* SettingsBundle.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		03C4D72A1BD64A5D00BEFC56 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		03C4D7351BD64A5D00BEFC56 /* PersonifyYourCar1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				03B402C51BD94DFB003158C5 /* Resources */,
 				03B402C11BD7E53E003158C5 /* Customized Cells */,
 				03C4D76E1BD65F9800BEFC56 /* Car View */,
 				03C4D76A1BD657BC00BEFC56 /* Web Service */,
@@ -273,6 +284,7 @@
 				03C4D7451BD64A5D00BEFC56 /* Main.storyboard in Resources */,
 				03C4D74A1BD64A5D00BEFC56 /* LaunchScreen.xib in Resources */,
 				03C4D7471BD64A5D00BEFC56 /* Images.xcassets in Resources */,
+				03B402C71BD94E36003158C5 /* SettingsBundle.bundle in Resources */,
 				03B402C01BD7E519003158C5 /* CarDisplayCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
