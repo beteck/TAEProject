@@ -13,5 +13,6 @@
 +(void)addPerson:(NSArray*)arrayOfPersonAttributes;
 +(void)addCar:(NSArray*)arrayOfCarAttributes;
 +(void)createRelationship:(NSManagedObject*)object1 secondobject:(NSManagedObject*)object2 specifiedrealtion:(NSString*)relation;
++(NSArray*)extractAllEntitiesOfSpecifiedType:(NSString*)specifiedType;
 
 @end

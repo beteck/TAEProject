@@ -85,6 +85,14 @@
     return cell;
 }
 
+/*!
+ *@discussion Construct the car model that is to be displayed from the dictionary description
+ *of a car that is returned from the web server
+ *@param An index that specifies the position of the car in the list of cars
+ *@return
+ */
+
+
 -(void)composeData:(NSInteger)index
 {
     //get array of attributes

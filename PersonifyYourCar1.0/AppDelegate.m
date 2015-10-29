@@ -125,4 +125,10 @@
     }
 }
 
+
+-(void)registerDefaultSettings
+{
+    
+    
+}
 @end

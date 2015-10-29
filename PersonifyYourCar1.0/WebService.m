@@ -23,6 +23,13 @@
 
 @implementation WebService
 
+/*!
+ *@brief Method
+ *@brief Add an entity of type Person on the web server
+ *@param An array of attributes that describes the Person
+ *@return A web description of the stored Person
+ */
+
 +(NSData*)addPerson:(NSArray *)personAttributes
 {
     NSData* webPerson = [[NSData alloc]init];
@@ -69,7 +76,12 @@
     return webPerson;
 }
 
-
+/*!
+ *@brief Method
+ *@briefConverts a web server description of a model into a string
+ *@param web server model
+ *@return a string format equivalent of the web model.
+ */
 +(NSString*)convertNSDATAToHumanReadableFormat:(NSData *)nsdataObject
 {
     NSString* webObject = [[NSString alloc]init];
@@ -81,7 +93,12 @@
     return  webObject;
 }
 
-
+/*!
+ *@brief Method
+ *@brief Add an entity of type car on the web server
+ *@param An array of attributes that describes the car
+ *@return A web description of the stored car
+ */
 +(NSData*)addCar:(NSArray *)carAttributes
 {
     NSData* webCar = [[NSData alloc]init];
@@ -125,6 +142,12 @@
     //web car in NSDATA
     return webCar;
 }
+
+/**
+ *@brief Method
+ *@brief Extracts all entities store on the web server
+ *@return An array of all the entites on the server
+ */
 
 +(NSArray*) extractAllEntitiesFromWeb
 {
@@ -174,7 +197,12 @@
     
 }
 
-
+/**
+ *@brief Method
+ *@brief Extracts all entities of a specified type stored on the web server
+ *@param type definition of the entities to extract
+ *@return returns an array containing all the entites of the specified type stored on the web server
+ */
 
 +(NSArray*)getAllEntitiesOfSpecifiedType:(NSString *)objectType
 {
@@ -218,7 +246,12 @@
     
     return docDirectory;
 }
-
+/**
+ *@brief Method
+ *@brief retrieve data stored on the web
+ *@param the web address of the data of interest
+ *@return the data extracted in nsdata format
+ */
 +(NSData*)getDataFromUrl:(NSString *)url fromcache:(BOOL)fromCache
 {
     NSData* urlData;
@@ -266,7 +299,13 @@
     
     return urlData;
 }
-
+/**
+ *@brief Method
+ *@brief Downloads an image for display from cache memory or from the web
+ *@param the web address from where to locate the image in String
+ *@param
+ *@return athe image downloaded from the web address across a web server
+ */
 +(UIImage*)imageFromUrl:(NSString *)url fromcache:(BOOL)fromCache
 {
     UIImage* imageData = [[UIImage alloc]init];
@@ -282,5 +321,6 @@
     }
     return imageData;
 }
+
 
 @end

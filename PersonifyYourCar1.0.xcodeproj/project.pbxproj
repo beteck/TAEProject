@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0330353B1BE0DC4F00875042 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0330353A1BE0DC4F00875042 /* LoginViewController.m */; };
+		033035431BE0E39300875042 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 033035421BE0E39300875042 /* Person.m */; };
+		0330354A1BE1137400875042 /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 033035491BE1137400875042 /* UserDetailViewController.m */; };
+		0330354D1BE128BF00875042 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 0330354C1BE128BF00875042 /* Car.m */; };
+		033035501BE185BF00875042 /* CustomCarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0330354F1BE185BF00875042 /* CustomCarCell.m */; };
+		033035541BE1987500875042 /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 033035531BE1987500875042 /* EventManager.m */; };
 		03B402C01BD7E519003158C5 /* CarDisplayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03B402BF1BD7E519003158C5 /* CarDisplayCell.xib */; };
 		03B402C41BD7ECE4003158C5 /* CarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B402C31BD7ECE4003158C5 /* CarTableViewCell.m */; };
 		03B402C71BD94E36003158C5 /* SettingsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03B402C61BD94E36003158C5 /* SettingsBundle.bundle */; };
@@ -35,6 +41,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		033035391BE0DC4F00875042 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0330353A1BE0DC4F00875042 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		033035411BE0E39300875042 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		033035421BE0E39300875042 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		033035481BE1137400875042 /* UserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailViewController.h; sourceTree = "<group>"; };
+		033035491BE1137400875042 /* UserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailViewController.m; sourceTree = "<group>"; };
+		0330354B1BE128BF00875042 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		0330354C1BE128BF00875042 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		0330354E1BE185BF00875042 /* CustomCarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCarCell.h; sourceTree = "<group>"; };
+		0330354F1BE185BF00875042 /* CustomCarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCarCell.m; sourceTree = "<group>"; };
+		033035521BE1987500875042 /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
+		033035531BE1987500875042 /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
 		03B402BF1BD7E519003158C5 /* CarDisplayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarDisplayCell.xib; sourceTree = "<group>"; };
 		03B402C21BD7ECE4003158C5 /* CarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarTableViewCell.h; sourceTree = "<group>"; };
 		03B402C31BD7ECE4003158C5 /* CarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarTableViewCell.m; sourceTree = "<group>"; };
@@ -81,6 +99,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033035381BE0DC1A00875042 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				033035391BE0DC4F00875042 /* LoginViewController.h */,
+				0330353A1BE0DC4F00875042 /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		033035401BE0E37900875042 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				033035411BE0E39300875042 /* Person.h */,
+				033035421BE0E39300875042 /* Person.m */,
+				0330354B1BE128BF00875042 /* Car.h */,
+				0330354C1BE128BF00875042 /* Car.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		033035441BE112B000875042 /* User Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				033035481BE1137400875042 /* UserDetailViewController.h */,
+				033035491BE1137400875042 /* UserDetailViewController.m */,
+				0330354E1BE185BF00875042 /* CustomCarCell.h */,
+				0330354F1BE185BF00875042 /* CustomCarCell.m */,
+			);
+			name = "User Detail View";
+			sourceTree = "<group>";
+		};
+		033035511BE1974100875042 /* Bundle Settings */ = {
+			isa = PBXGroup;
+			children = (
+				033035521BE1987500875042 /* EventManager.h */,
+				033035531BE1987500875042 /* EventManager.m */,
+			);
+			name = "Bundle Settings";
+			sourceTree = "<group>";
+		};
 		03B402C11BD7E53E003158C5 /* Customized Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +178,10 @@
 		03C4D7351BD64A5D00BEFC56 /* PersonifyYourCar1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				033035511BE1974100875042 /* Bundle Settings */,
+				033035441BE112B000875042 /* User Detail View */,
+				033035401BE0E37900875042 /* Model */,
+				033035381BE0DC1A00875042 /* Login */,
 				03B402C51BD94DFB003158C5 /* Resources */,
 				03B402C11BD7E53E003158C5 /* Customized Cells */,
 				03C4D76E1BD65F9800BEFC56 /* Car View */,
@@ -305,13 +367,19 @@
 			files = (
 				03C4D73C1BD64A5D00BEFC56 /* AppDelegate.m in Sources */,
 				03C4D76D1BD6588800BEFC56 /* WebService.m in Sources */,
+				033035431BE0E39300875042 /* Person.m in Sources */,
 				03C4D7711BD688A900BEFC56 /* CoreDataManager.m in Sources */,
+				0330354D1BE128BF00875042 /* Car.m in Sources */,
 				03C4D7691BD64ECB00BEFC56 /* AddEntitiesViewController.m in Sources */,
+				0330353B1BE0DC4F00875042 /* LoginViewController.m in Sources */,
 				03C4D7661BD64E6C00BEFC56 /* CarViewController.m in Sources */,
 				03C4D73F1BD64A5D00BEFC56 /* PersonifyYourCar1_0.xcdatamodeld in Sources */,
+				033035501BE185BF00875042 /* CustomCarCell.m in Sources */,
 				03C4D7621BD64BF600BEFC56 /* AddCarViewController.m in Sources */,
 				03B402C41BD7ECE4003158C5 /* CarTableViewCell.m in Sources */,
+				0330354A1BE1137400875042 /* UserDetailViewController.m in Sources */,
 				03C4D7391BD64A5D00BEFC56 /* main.m in Sources */,
+				033035541BE1987500875042 /* EventManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

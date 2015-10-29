@@ -107,4 +107,17 @@
     
 }
 
++(NSArray*)extractAllEntitiesOfSpecifiedType:(NSString *)specifiedType
+{
+    //fetch persons from storage
+    NSManagedObjectContext* moc = [self managedObjectContext];
+    NSFetchRequest* request = [[NSFetchRequest alloc]initWithEntityName:specifiedType];
+    NSMutableArray* arrayOfEntities = [[moc executeFetchRequest:request error:nil]mutableCopy];
+    
+    NSLog(@"Extraction Success");
+    
+    return (NSArray*)arrayOfEntities;
+    
+}
+
 @end
